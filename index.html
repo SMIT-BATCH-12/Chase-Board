@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="">
+ 
+<head>
+    <title> ASAD Chess Board</title>
+    <style>
+        .chessboard-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 400px;
+            border: 5px solid #333;
+            overflow: hidden;
+        }
+         
+        .chessboard {
+            width: 100%;
+            height: 100%;
+            background-size: 50px 50px;
+            background-image: 
+        linear-gradient(50deg, #000 25%, transparent 25%, 
+                        transparent 75%, #000 75%, #000),
+        linear-gradient(50deg, #000 25%, transparent 25%, 
+                        transparent 75%, #000 75%, #000),
+        linear-gradient(50deg, #fff 25%, transparent 25%, 
+                        transparent 75%, #fff 75%, #fff),
+        linear-gradient(50deg, #fff 25%, transparent 25%, 
+                        transparent 75%, #fff 75%, #fff);
+            background-position: 0 0, 25px 25px, 25px 0, 0 25px;
+        }
+    </style>
+</head>
+ 
+<body>
+    <div class="chessboard-container">
+        <div class="chessboard"></div>
+    </div>
+</body>
+ 
+</html>
